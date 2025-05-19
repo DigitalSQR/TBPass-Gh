@@ -1,7 +1,7 @@
 Logical: TBPatientIPS
 Id: tb-patient-ips
 Title: "TB Patient IPS Logical Model"
-Description: "Logical model representing a mapped subset of the Ghana TB dataset to FHIR IPS"
+Description: "Logical model representing a mapped subset of the TB Pass dataset to FHIR IPS"
 
 // ToDo: Date of registration...
 
@@ -10,15 +10,16 @@ Description: "Logical model representing a mapped subset of the Ghana TB dataset
   * nationalIDNumber 0..* Identifier "Patient Identifiers"
   * nhisNumber 0..* Identifier "Patient Identifiers"
 
-* name 1..* HumanName "Patient Name"
-  * given 1..* string "Given name"
-    * ^comment = "Maps to First Name (GHTB-006), Middle Name (GHTB-007)"
-  * family 1..1 string "Family name"
-    * ^comment = "Maps to Last Name (GHTB-008)"
+  * name 1..* BackboneElement "Patient Name"
+    * given 1..* string "Given name"
+      * ^comment = "Maps to First Name (GHTB-006), Middle Name (GHTB-007)"
+    * family 1..1 string "Family name"
+      * ^comment = "Maps to Last Name (GHTB-008)"
 
-// ToDo: Middle Name
+// ToDo: Middle Name ???
 
   * gender 1..1 code "Administrative Gender"
+  * gender from http://hl7.org/fhir/ValueSet/administrative-gender
 
 //  * maritalStatus 0..1 CodeableConcept "Marital Status"
 
@@ -60,7 +61,8 @@ Description: "Logical model representing a mapped subset of the Ghana TB dataset
 
 * treatmentOutcome 0..1 BackboneElement "Treatment Outcome"
   * outcome 0..1 CodeableConcept "Treatment outcome"
-  * treatmentEndDate 0..1 CodeableConcept "Outcome status"
+  * outcome from TreatmentOutcomeVS
+  * treatmentEndDate 0..1 date "Outcome status"
 
 * labResults 0..* BackboneElement "Lab Results"
   * testType 0..1 CodeableConcept "Lab Test"
