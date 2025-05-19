@@ -167,11 +167,10 @@ Description: "A fully detailed logical model derived from the IPS FHIR profiles,
     * effective[x] 0..1 dateTime or Period "When the observations were made"
 //    * issued 0..1 dateTime "When the report was released"
     * performer 0..* string "Who was responsible for the report"
-    * specimen 0..* contentReference #IPSLogicalModel.specimen "Referenced observation results"
+//    * specimen 0..* contentReference #IPSLogicalModel.specimen "Referenced observation results"
 //    * conclusion 0..1 string "Clinical conclusion"
 //    * presentedForm 0..* string "Report as narrative or document"
   
-
 
 
 * vitalSigns 0..1 BackboneElement "Vital signs"
@@ -334,3 +333,4 @@ Description: "A fully detailed logical model derived from the IPS FHIR profiles,
     * method 0..1 CodeableConcept "Collection method"
     * bodySite 0..1 CodeableConcept "Collection site"
     * fastingStatus[x] 0..1 CodeableConcept "Fasting status"
+

@@ -3,9 +3,12 @@ Id: tb-patient-ips
 Title: "TB Patient IPS Logical Model"
 Description: "Logical model representing a mapped subset of the Ghana TB dataset to FHIR IPS"
 
-* identifier 0..* Identifier "Patient Identifiers"
-  * value 1..1 string "Identifier Value"
-  * ^comment = "Maps to Client Registration Number (GHTB-003), National ID (Ghana Card) (GHTB-004), NHIS Number (GHTB-005)"
+// ToDo: Date of registration...
+
+* patient 1..1 BackboneElement "Patient Info"
+  * clientRegistrationNumber 0..* Identifier "Patient Identifiers"
+  * nationalIDNumber 0..* Identifier "Patient Identifiers"
+  * nhisNumber 0..* Identifier "Patient Identifiers"
 
 * name 1..* HumanName "Patient Name"
   * given 1..* string "Given name"
@@ -13,86 +16,57 @@ Description: "Logical model representing a mapped subset of the Ghana TB dataset
   * family 1..1 string "Family name"
     * ^comment = "Maps to Last Name (GHTB-008)"
 
-* gender 1..1 code "Administrative Gender"
-  * ^comment = "Maps to GEN - Sex (GHTB-009)"
+// ToDo: Middle Name
 
-* maritalStatus 0..1 CodeableConcept "Marital Status"
-  * ^comment = "Maps to Marital Status (GHTB-011)"
+  * gender 1..1 code "Administrative Gender"
 
-* telecom 0..1 ContactPoint "Mobile Phone"
-  * ^comment = "Maps to Mobile Phone (GHTB-012)"
+//  * maritalStatus 0..1 CodeableConcept "Marital Status"
 
-* problemList 0..* BackboneElement "Patient Problems (Conditions)"
-  * code 1..1 CodeableConcept "Problem code"
-    * ^comment = "Maps to Is Client An Existing Active TB Case? (GHTB-015), HIV infection (GHTB-045)"
-  * onsetDateTime 0..1 dateTime "Onset Date"
-    * ^comment = "Maps to Date of diagnosis (GHTB-050)"
+  * mobilePhone 0..1 ContactPoint "Mobile Phone"
 
-* medicationList 0..* BackboneElement "Medications Administered"
-  * medication 1..1 CodeableConcept "Medication name"
-    * ^comment = "Maps to Treatment regimen (GHTB-060), Preventive TB treatment (TPT) (GHTB-070)"
-  * effectivePeriod 0..1 Period "Medication start/end"
-    * start 0..1 dateTime "Start Date"
-      * ^comment = "Maps to First-line treatment start date (GHTB-061), Second-line treatment start date (GHTB-062)"
-    * end 0..1 dateTime "End Date"
+// ToDo: Occupation
 
-* diagnosticReports 0..* BackboneElement "Diagnostic Reports"
-  * category 0..1 CodeableConcept "Category"
-    * ^comment = "Maps to Type of Laboratory Test (GHTB-033)"
-  * specimen 0..1 Reference "Specimen"
-    * ^comment = "Maps to Date of Specimen Collection (GHTB-034), Sample Type (GHTB-035), Sample ID (GHTB-036)"
 
-* observations 0..* BackboneElement "Lab Results and Observations"
-  * code 1..1 CodeableConcept "Observation type"
-  * value[x] 0..1 string "Value"
-  * effectiveDateTime 0..1 dateTime "When observed"
-    * ^comment = "Maps to Xpert MTB/RIF Ultra - MTB Results (GHTB-038), MTB Result Interpretation (GHTB-039)"
+* tbCondition 1..1 CodeableConcept "TB Condition"
+  * dateOfDiagnosis 0..1 date "Date of Diagnosis"
+  * diagnosis 0..1 CodeableConcept "Diagnosis"
+// Confirmation method/ case definition
 
-* vitalSigns 0..* BackboneElement "Vital Signs"
-  * code 1..1 CodeableConcept "Vital sign type"
-  * valueQuantity 0..1 Quantity "Vital sign value"
-    * value 0..1 decimal "Value"
-    * unit 0..1 string  "Unit"
-  * ^comment = "Maps to Height (in CM) (GHTB-056), Weight (KG) (GHTB-057), Body Mass Index (BMI) (GHTB-058), MUAC for Children (in CM) (GHTB-059)"
 
-* screening 0..* BackboneElement "TB Screening and Symptoms"
-  * symptom 0..* CodeableConcept "Symptom present"
-    * ^comment = "Maps to Cough (GHTB-018), Weight loss (GHTB-019), Night sweats (GHTB-020), Fever (GHTB-021), Chest Pains (GHTB-022)"
-  * screeningOutcome 0..1 CodeableConcept "TB Screening Outcome"
-    * ^comment = "Maps to TB Screening outcome (GHTB-027)"
-  * comment 0..1 string "Screening-related comment"
-    * ^comment = "Maps to Screening-related comment (GHTB-028)"
 
-* notification 0..* BackboneElement "Notification Info"
-  * reportDate 0..1 dateTime "Notification Report Date"
-    * ^comment = "Maps to Report date (Diagnosis and notification section) (GHTB-054)"
-  * notifyCase 0..1 boolean "Is TB diagnosis? Notify case?"
-    * ^comment = "Maps to Is this a TB diagnosis? Do you want to notify the case? (GHTB-047)"
-  * notificationDate 0..1 dateTime "Date of notification"
-    * ^comment = "Maps to Date of notification (GHTB-051)"
+// ToDo: History of previous treatment - not in diagnosis?
 
-* contactTracing 0..1 BackboneElement "Contact Tracing"
-  * numHouseholdContacts 0..1 integer "Number of household contacts"
-    * ^comment = "Maps to Number of people (excluding the index case) living in the same household (GHTB-053)"
+  * diseaseSite 0..1 CodeableConcept "Disease Site"
 
-* tpt 0..* BackboneElement "TPT Info"
-  * eligible 0..1 boolean "TPT eligible?"
-    * ^comment = "Maps to TPT eligible? (GHTB-069)"
-  * comment 0..1 string "TPT related comment"
-    * ^comment = "Maps to TPT related comment (GHTB-071)"
-  * outcome 0..1 CodeableConcept "TPT outcome"
-    * ^comment = "Maps to TPT Outcome (GHTB-072, GHTB-074)"
-  * reportDate 0..1 dateTime "TPT Report Date"
-    * ^comment = "Maps to Report date (TPT section) (GHTB-073)"
+// ToDo: drugResistance 
 
-* treatmentDelays 0..1 BackboneElement "Treatment Delays"
-  * initiationDelayDays 0..1 integer "Treatment initiation delay"
-    * ^comment = "Maps to Treatment initiation delay (days) (GHTB-063)"
-  * outcomeDelayWeeks 0..1 integer "Treatment outcome delay"
-    * ^comment = "Maps to Treatment outcome delay (weeks) (GHTB-066)"
+
+
+* currentTBTreatment 0..1 BackboneElement "Current TB Treatment"
+  * treatmentStartDate 0..1 date "Treatment Start Date"
+  * facility 0..1 Reference "Facility"
+  * regimenType 0..1 CodeableConcept "Treatment Regimen"   // regimenType???
+
+/////////// height.......
+  * height 0..1 Quantity "Height"
+  * weight 0..1 Quantity "Weight"
+
+  * treatmentEndDate 0..1 date "Treatment End Date"
+
+  * outcomeDueDate 0..1 date "Outcome Due Date" // outcome? Due date?
+  * treatmentNotes 0..1 string "Treatment Notes"
+  
+/// treatment oucome due date above, but outcomes below?
 
 * treatmentOutcome 0..1 BackboneElement "Treatment Outcome"
   * outcome 0..1 CodeableConcept "Treatment outcome"
-    * ^comment = "Maps to Treatment outcome (GHTB-064)"
-  * status 0..1 CodeableConcept "Outcome status"
-    * ^comment = "Maps to Outcome status (GHTB-065)"
+  * treatmentEndDate 0..1 CodeableConcept "Outcome status"
+
+* labResults 0..* BackboneElement "Lab Results"
+  * testType 0..1 CodeableConcept "Lab Test"
+  * testDate 0..1 date "Test Date"
+  * result 0..1 CodeableConcept "Result"
+  * notes 0..1 string "Notes"
+  * sampleType 0..1 CodeableConcept "Sample Type"
+  * sampleId 0..1 Identifier "Sample ID"
+
