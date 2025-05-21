@@ -1,3 +1,30 @@
+Instance: TBPassExample
+InstanceOf: Bundle-uv-ips
+Title: "TB Pass Example Bundle"
+Description: "Example TB Pass Bundle for Bernard Wadie"
+* type = #document
+* identifier.value = "TBPass-001"
+* timestamp = "2025-05-11T10:00:00Z"
+* entry[composition].fullUrl = "http://example.org/fhir/TBPassComposition/tbpass-composition-001"
+* entry[composition].resource = tbpass-composition-001
+* entry[patient].fullUrl = "http://example.org/fhir/Patient/tbpass-patient-bernard"
+* entry[patient].resource = tbpass-patient-bernard
+
+* entry[condition][+].fullUrl = "http://example.org/fhir/TBPassTBProblem/tbpass-problem-tb"
+* entry[condition][=].resource = tbpass-problem-tb
+* entry[+].fullUrl = "http://example.org/fhir/TBPassRegimenMedicationStatement/tbpass-treatment-regimen"
+* entry[=].resource = tbpass-treatment-regimen
+* entry[+].fullUrl = "http://example.org/fhir/TBPassVitalSigns/tbpass-vitals"
+* entry[=].resource = tbpass-vitals
+* entry[+].fullUrl = "http://example.org/fhir/TBPassTreatmentOutcome/tbpass-treatment-outcome"
+* entry[=].resource = tbpass-treatment-outcome
+* entry[+].fullUrl = "http://example.org/fhir/TBPassSpecimen/tbpass-specimen-ak001"
+* entry[=].resource = tbpass-specimen-ak001
+* entry[+].fullUrl = "http://example.org/fhir/TBPassLabResults/tbpass-labresult-001"
+* entry[=].resource = tbpass-labresult-001
+
+
+
 Instance: tbpass-patient-bernard
 InstanceOf: TBPassPatient
 Title: "TB Pass Patient Bernard Wadie"
