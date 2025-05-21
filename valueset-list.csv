@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs,0.1.0,draft,,RegimenTypesVS,Regimen Types ValueSet,"A ValueSet for Regimen Types.",,"Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs,0.1.0,draft,,SpecimenTypesVS,Specimen Types ValueSet,"A ValueSet for Specimen Types.",,"Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs,0.1.0,draft,,TestResultsVS,Test Results ValueSet,"A ValueSet for Test Results.",,"Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs,0.1.0,draft,,TestTypesVS,Test Types ValueSet,"A ValueSet for Test Types.",,"Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs,0.1.0,draft,,TreatmentOutcomeVS,Treatment Outcome ValueSet,"A ValueSet for Treatment Outcomes.",,"Internal"

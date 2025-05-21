@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Observation",
+  "id" : "tbpass-treatment-outcome",
+  "meta" : {
+    "profile" : ["http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/treatment-outcome-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation tbpass-treatment-outcome</b></p><a name=\"tbpass-treatment-outcome\"> </a><a name=\"hctbpass-treatment-outcome\"> </a><a name=\"tbpass-treatment-outcome-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-treatment-outcome-observation.html\">TB Pass Treatment Outcome</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome cured}\">Cured</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: ?? --&gt; 2025-05-08</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+      "code" : "cured"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/tbpass-patient-bernard"
+  },
+  "effectivePeriod" : {
+    "end" : "2025-05-08"
+  }
+}

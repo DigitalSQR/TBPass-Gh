@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "regimen-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem regimen-types</b></p><a name=\"regimen-types\"> </a><a name=\"hcregimen-types\"> </a><a name=\"regimen-types-en-US\"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">first-line<a name=\"regimen-types-first-line\"> </a></td><td>First-line treatment</td></tr><tr><td style=\"white-space:nowrap\">second-line<a name=\"regimen-types-second-line\"> </a></td><td>Second-line treatment</td></tr></table></div>"
+  },
+  "url" : "http://fhir.nhis.gov.gh/CodeSystem/RegimenType",
+  "version" : "0.1.0",
+  "name" : "RegimenTypes",
+  "title" : "Regimen Types CodeSystem",
+  "status" : "draft",
+  "date" : "2025-05-21T15:04:54+00:00",
+  "publisher" : "Digital Square",
+  "contact" : [{
+    "name" : "Digital Square",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "A CodeSystem for Regimen Types.",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "first-line",
+    "display" : "First-line treatment"
+  },
+  {
+    "code" : "second-line",
+    "display" : "Second-line treatment"
+  }]
+}

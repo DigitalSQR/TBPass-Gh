@@ -1,0 +1,71 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.nhis.gov.gh/CodeSystem/RegimenType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RegimenTypes",
+      "title" : "Regimen Types CodeSystem",
+      "description" : "A CodeSystem for Regimen Types.",
+      "uses" : {
+      },
+      "ValueSet-regimen-types-vs.html" : "Regimen Types ValueSet"
+    },
+    {
+      "url" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SpecimenTypes",
+      "title" : "Specimen Types CodeSystem",
+      "description" : "A CodeSystem for Specimen Types.",
+      "uses" : {
+      },
+      "ValueSet-specimen-types-vs.html" : "Specimen Types ValueSet"
+    },
+    {
+      "url" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TestResults",
+      "title" : "Test Results CodeSystem",
+      "description" : "A CodeSystem for Test Results.",
+      "uses" : {
+      },
+      "ValueSet-test-results-vs.html" : "Test Results ValueSet"
+    },
+    {
+      "url" : "http://fhir.nhis.gov.gh/CodeSystem/TestType",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TestTypes",
+      "title" : "Test Types CodeSystem",
+      "description" : "A CodeSystem for Test Types.",
+      "uses" : {
+      },
+      "ValueSet-test-types-vs.html" : "Test Types ValueSet"
+    },
+    {
+      "url" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TreatmentOutcome",
+      "title" : "Treatment Outcome CodeSystem",
+      "description" : "A CodeSystem for Treatment Outcomes.",
+      "uses" : {
+      },
+      "ValueSet-treatment-outcome-vs.html" : "Treatment Outcome ValueSet"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    }
+  ]
+}

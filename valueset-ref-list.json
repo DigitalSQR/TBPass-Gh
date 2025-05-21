@@ -1,0 +1,79 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RegimenTypesVS",
+      "title" : "Regimen Types ValueSet",
+      "description" : "A ValueSet for Regimen Types.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/RegimenType"],
+      "uses" : {
+      },
+      "StructureDefinition-regimen-medicationstatement.html" : "TB Pass TBMedicationStatement"
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SpecimenTypesVS",
+      "title" : "Specimen Types ValueSet",
+      "description" : "A ValueSet for Specimen Types.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"],
+      "uses" : {
+      },
+      "StructureDefinition-tb-pass-specimen.html" : "TB Pass Specimen"
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TestResultsVS",
+      "title" : "Test Results ValueSet",
+      "description" : "A ValueSet for Test Results.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/TestResult"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-results-observation.html" : "TB Pass Treatment Outcome"
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TestTypesVS",
+      "title" : "Test Types ValueSet",
+      "description" : "A ValueSet for Test Types.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/TestType"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-results-observation.html" : "TB Pass Treatment Outcome"
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TreatmentOutcomeVS",
+      "title" : "Treatment Outcome ValueSet",
+      "description" : "A ValueSet for Treatment Outcomes.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"],
+      "uses" : {
+      },
+      "StructureDefinition-treatment-outcome-observation.html" : "TB Pass Treatment Outcome",
+      "StructureDefinition-tb-patient-ips.html" : "TB Patient IPS Logical Model"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-tb-patient-ips.html" : "TB Patient IPS Logical Model"
+    }
+  ]
+}

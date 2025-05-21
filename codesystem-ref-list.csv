@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://fhir.nhis.gov.gh/CodeSystem/RegimenType,0.1.0,draft,,RegimenTypes,Regimen Types CodeSystem,"A CodeSystem for Regimen Types.","ValueSet/regimen-types-vs"
+http://fhir.nhis.gov.gh/CodeSystem/SpecimenType,0.1.0,draft,,SpecimenTypes,Specimen Types CodeSystem,"A CodeSystem for Specimen Types.","ValueSet/specimen-types-vs"
+http://fhir.nhis.gov.gh/CodeSystem/TestResult,0.1.0,draft,,TestResults,Test Results CodeSystem,"A CodeSystem for Test Results.","ValueSet/test-results-vs"
+http://fhir.nhis.gov.gh/CodeSystem/TestType,0.1.0,draft,,TestTypes,Test Types CodeSystem,"A CodeSystem for Test Types.","ValueSet/test-types-vs"
+http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome,0.1.0,draft,,TreatmentOutcome,Treatment Outcome CodeSystem,"A CodeSystem for Treatment Outcomes.","ValueSet/treatment-outcome-vs"
+http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"

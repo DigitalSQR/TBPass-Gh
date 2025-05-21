@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-vitals> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tbpass-vitals"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-vital-signs"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-vital-signs>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation tbpass-vitals</b></p><a name=\"tbpass-vitals\"> </a><a name=\"hctbpass-vitals\"> </a><a name=\"tbpass-vitals-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ghana-tb-vital-signs.html\">TB Pass IPS Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:\">Height and Weight</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-08</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Height</span></p><p><b>value</b>: 160 cm</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Weight</span></p><p><b>value</b>: 80 kg</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Height and Weight" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-05-08"^^xsd:date
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:text [ fhir:v "Height" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "160"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "cm" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Weight" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "80"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "kg" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

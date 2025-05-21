@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "specimen-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem specimen-types</b></p><a name=\"specimen-types\"> </a><a name=\"hcspecimen-types\"> </a><a name=\"specimen-types-en-US\"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">sputum<a name=\"specimen-types-sputum\"> </a></td><td>Sputum</td></tr><tr><td style=\"white-space:nowrap\">stool<a name=\"specimen-types-stool\"> </a></td><td>Stool</td></tr><tr><td style=\"white-space:nowrap\">gastric-lavage<a name=\"specimen-types-gastric-lavage\"> </a></td><td>Gastric Lavage</td></tr></table></div>"
+  },
+  "url" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+  "version" : "0.1.0",
+  "name" : "SpecimenTypes",
+  "title" : "Specimen Types CodeSystem",
+  "status" : "draft",
+  "date" : "2025-05-21T15:04:54+00:00",
+  "publisher" : "Digital Square",
+  "contact" : [{
+    "name" : "Digital Square",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "A CodeSystem for Specimen Types.",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "sputum",
+    "display" : "Sputum"
+  },
+  {
+    "code" : "stool",
+    "display" : "Stool"
+  },
+  {
+    "code" : "gastric-lavage",
+    "display" : "Gastric Lavage"
+  }]
+}

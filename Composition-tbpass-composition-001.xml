@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="tbpass-composition-001"/>
+  <meta>
+    <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition tbpass-composition-001</b></p><a name="tbpass-composition-001"> </a><a name="hctbpass-composition-001"> </a><a name="tbpass-composition-001-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tb-pass-composition.html">TB Pass IPS Composition</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 60591-5}">Tuberculosis Progress Note</span></p><p><b>date</b>: 2025-05-11</p><p><b>author</b>: <a href="Practitioner/example">Practitioner/example</a></p><p><b>title</b>: TB Case Summary for Bernard Wadie</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60591-5"/>
+      <display value="Tuberculosis Progress Note"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/tbpass-patient-bernard"/>
+  </subject>
+  <date value="2025-05-11"/>
+  <author>
+    <reference value="Practitioner/example"/>
+  </author>
+  <title value="TB Case Summary for Bernard Wadie"/>
+  <section>
+    <title value="Problems"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11450-4"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div>Confirmed TB case for Bernard Wadie</div>
+    </text>
+    <entry>
+      <reference value="Condition/tbpass-problem-tb"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Medications"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div>First-line TB treatment regimen for Bernard Wadie</div>
+    </text>
+    <entry>
+      <reference value="MedicationStatement/tbpass-treatment-regimen"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Vital Signs"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8716-3"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div>Vital signs at start of treatment</div>
+    </text>
+    <entry>
+      <reference value="Observation/tbpass-vitals"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Lab Results"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="30954-2"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div>Lab result showing positive smear microscopy</div>
+    </text>
+    <entry>
+      <reference value="Observation/tbpass-treatment-outcome"/>
+    </entry>
+    <entry>
+      <reference value="Observation/tbpass-labresult-001"/>
+    </entry>
+  </section>
+  <section>
+    <title value="No allergies"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48765-2"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div>No known allergies</div>
+    </text>
+    <entry>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown"/>
+      </extension>
+    </entry>
+  </section>
+</Composition>

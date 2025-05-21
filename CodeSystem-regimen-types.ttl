@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/CodeSystem/regimen-types> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regimen-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem regimen-types</b></p><a name=\"regimen-types\"> </a><a name=\"hcregimen-types\"> </a><a name=\"regimen-types-en-US\"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">first-line<a name=\"regimen-types-first-line\"> </a></td><td>First-line treatment</td></tr><tr><td style=\"white-space:nowrap\">second-line<a name=\"regimen-types-second-line\"> </a></td><td>Second-line treatment</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/RegimenType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RegimenTypes"] ; # 
+  fhir:title [ fhir:v "Regimen Types CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-05-21T15:04:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Digital Square"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Digital Square" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A CodeSystem for Regimen Types."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "first-line" ] ;
+     fhir:display [ fhir:v "First-line treatment" ]
+  ] [
+     fhir:code [ fhir:v "second-line" ] ;
+     fhir:display [ fhir:v "Second-line treatment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

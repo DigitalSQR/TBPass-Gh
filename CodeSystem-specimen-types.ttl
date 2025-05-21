@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/CodeSystem/specimen-types> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "specimen-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem specimen-types</b></p><a name=\"specimen-types\"> </a><a name=\"hcspecimen-types\"> </a><a name=\"specimen-types-en-US\"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">sputum<a name=\"specimen-types-sputum\"> </a></td><td>Sputum</td></tr><tr><td style=\"white-space:nowrap\">stool<a name=\"specimen-types-stool\"> </a></td><td>Stool</td></tr><tr><td style=\"white-space:nowrap\">gastric-lavage<a name=\"specimen-types-gastric-lavage\"> </a></td><td>Gastric Lavage</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SpecimenTypes"] ; # 
+  fhir:title [ fhir:v "Specimen Types CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-05-21T15:04:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Digital Square"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Digital Square" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A CodeSystem for Specimen Types."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "sputum" ] ;
+     fhir:display [ fhir:v "Sputum" ]
+  ] [
+     fhir:code [ fhir:v "stool" ] ;
+     fhir:display [ fhir:v "Stool" ]
+  ] [
+     fhir:code [ fhir:v "gastric-lavage" ] ;
+     fhir:display [ fhir:v "Gastric Lavage" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

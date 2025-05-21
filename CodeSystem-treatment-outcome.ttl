@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/CodeSystem/treatment-outcome> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "treatment-outcome"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem treatment-outcome</b></p><a name=\"treatment-outcome\"> </a><a name=\"hctreatment-outcome\"> </a><a name=\"treatment-outcome-en-US\"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">cured<a name=\"treatment-outcome-cured\"> </a></td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\">treatment-failure<a name=\"treatment-outcome-treatment-failure\"> </a></td><td>Treatment Failure</td></tr><tr><td style=\"white-space:nowrap\">treatment-completed<a name=\"treatment-outcome-treatment-completed\"> </a></td><td>Treatment Completed</td></tr><tr><td style=\"white-space:nowrap\">not-evaluable<a name=\"treatment-outcome-not-evaluable\"> </a></td><td>Not Evaluated</td></tr><tr><td style=\"white-space:nowrap\">died<a name=\"treatment-outcome-died\"> </a></td><td>Died</td></tr><tr><td style=\"white-space:nowrap\">transferred-out<a name=\"treatment-outcome-transferred-out\"> </a></td><td>Transferred Out</td></tr><tr><td style=\"white-space:nowrap\">lost-to-follow-up<a name=\"treatment-outcome-lost-to-follow-up\"> </a></td><td>Lost to Follow Up</td></tr><tr><td style=\"white-space:nowrap\">not-done<a name=\"treatment-outcome-not-done\"> </a></td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"treatment-outcome-unknown\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">treatment-delayed<a name=\"treatment-outcome-treatment-delayed\"> </a></td><td>Treatment Delayed</td></tr><tr><td style=\"white-space:nowrap\">treatment-ongoing<a name=\"treatment-outcome-treatment-ongoing\"> </a></td><td>Treatment Ongoing</td></tr><tr><td style=\"white-space:nowrap\">treatment-terminated<a name=\"treatment-outcome-treatment-terminated\"> </a></td><td>Treatment Terminated</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TreatmentOutcome"] ; # 
+  fhir:title [ fhir:v "Treatment Outcome CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-05-21T15:04:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Digital Square"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Digital Square" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A CodeSystem for Treatment Outcomes."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cured" ] ;
+     fhir:display [ fhir:v "Cured" ]
+  ] [
+     fhir:code [ fhir:v "treatment-failure" ] ;
+     fhir:display [ fhir:v "Treatment Failure" ]
+  ] [
+     fhir:code [ fhir:v "treatment-completed" ] ;
+     fhir:display [ fhir:v "Treatment Completed" ]
+  ] [
+     fhir:code [ fhir:v "not-evaluable" ] ;
+     fhir:display [ fhir:v "Not Evaluated" ]
+  ] [
+     fhir:code [ fhir:v "died" ] ;
+     fhir:display [ fhir:v "Died" ]
+  ] [
+     fhir:code [ fhir:v "transferred-out" ] ;
+     fhir:display [ fhir:v "Transferred Out" ]
+  ] [
+     fhir:code [ fhir:v "lost-to-follow-up" ] ;
+     fhir:display [ fhir:v "Lost to Follow Up" ]
+  ] [
+     fhir:code [ fhir:v "not-done" ] ;
+     fhir:display [ fhir:v "Not Done" ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ]
+  ] [
+     fhir:code [ fhir:v "treatment-delayed" ] ;
+     fhir:display [ fhir:v "Treatment Delayed" ]
+  ] [
+     fhir:code [ fhir:v "treatment-ongoing" ] ;
+     fhir:display [ fhir:v "Treatment Ongoing" ]
+  ] [
+     fhir:code [ fhir:v "treatment-terminated" ] ;
+     fhir:display [ fhir:v "Treatment Terminated" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

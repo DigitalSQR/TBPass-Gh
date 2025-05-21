@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs,0.1.0,draft,,RegimenTypesVS,Regimen Types ValueSet,"A ValueSet for Regimen Types.","StructureDefinition/regimen-medicationstatement","Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs,0.1.0,draft,,SpecimenTypesVS,Specimen Types ValueSet,"A ValueSet for Specimen Types.","StructureDefinition/tb-pass-specimen","Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs,0.1.0,draft,,TestResultsVS,Test Results ValueSet,"A ValueSet for Test Results.","StructureDefinition/lab-results-observation","Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs,0.1.0,draft,,TestTypesVS,Test Types ValueSet,"A ValueSet for Test Types.","StructureDefinition/lab-results-observation","Internal"
+http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs,0.1.0,draft,,TreatmentOutcomeVS,Treatment Outcome ValueSet,"A ValueSet for Treatment Outcomes.","StructureDefinition/treatment-outcome-observation,StructureDefinition/tb-patient-ips","Internal"
+http://hl7.org/fhir/ValueSet/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.3.1",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","StructureDefinition/tb-patient-ips","hl7.fhir.r4.core"

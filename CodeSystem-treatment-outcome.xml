@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="treatment-outcome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem treatment-outcome</b></p><a name="treatment-outcome"> </a><a name="hctreatment-outcome"> </a><a name="treatment-outcome-en-US"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">cured<a name="treatment-outcome-cured"> </a></td><td>Cured</td></tr><tr><td style="white-space:nowrap">treatment-failure<a name="treatment-outcome-treatment-failure"> </a></td><td>Treatment Failure</td></tr><tr><td style="white-space:nowrap">treatment-completed<a name="treatment-outcome-treatment-completed"> </a></td><td>Treatment Completed</td></tr><tr><td style="white-space:nowrap">not-evaluable<a name="treatment-outcome-not-evaluable"> </a></td><td>Not Evaluated</td></tr><tr><td style="white-space:nowrap">died<a name="treatment-outcome-died"> </a></td><td>Died</td></tr><tr><td style="white-space:nowrap">transferred-out<a name="treatment-outcome-transferred-out"> </a></td><td>Transferred Out</td></tr><tr><td style="white-space:nowrap">lost-to-follow-up<a name="treatment-outcome-lost-to-follow-up"> </a></td><td>Lost to Follow Up</td></tr><tr><td style="white-space:nowrap">not-done<a name="treatment-outcome-not-done"> </a></td><td>Not Done</td></tr><tr><td style="white-space:nowrap">unknown<a name="treatment-outcome-unknown"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">treatment-delayed<a name="treatment-outcome-treatment-delayed"> </a></td><td>Treatment Delayed</td></tr><tr><td style="white-space:nowrap">treatment-ongoing<a name="treatment-outcome-treatment-ongoing"> </a></td><td>Treatment Ongoing</td></tr><tr><td style="white-space:nowrap">treatment-terminated<a name="treatment-outcome-treatment-terminated"> </a></td><td>Treatment Terminated</td></tr></table></div>
+  </text>
+  <url value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+  <version value="0.1.0"/>
+  <name value="TreatmentOutcome"/>
+  <title value="Treatment Outcome CodeSystem"/>
+  <status value="draft"/>
+  <date value="2025-05-21T15:04:54+00:00"/>
+  <publisher value="Digital Square"/>
+  <contact>
+    <name value="Digital Square"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="A CodeSystem for Treatment Outcomes."/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="cured"/>
+    <display value="Cured"/>
+  </concept>
+  <concept>
+    <code value="treatment-failure"/>
+    <display value="Treatment Failure"/>
+  </concept>
+  <concept>
+    <code value="treatment-completed"/>
+    <display value="Treatment Completed"/>
+  </concept>
+  <concept>
+    <code value="not-evaluable"/>
+    <display value="Not Evaluated"/>
+  </concept>
+  <concept>
+    <code value="died"/>
+    <display value="Died"/>
+  </concept>
+  <concept>
+    <code value="transferred-out"/>
+    <display value="Transferred Out"/>
+  </concept>
+  <concept>
+    <code value="lost-to-follow-up"/>
+    <display value="Lost to Follow Up"/>
+  </concept>
+  <concept>
+    <code value="not-done"/>
+    <display value="Not Done"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="treatment-delayed"/>
+    <display value="Treatment Delayed"/>
+  </concept>
+  <concept>
+    <code value="treatment-ongoing"/>
+    <display value="Treatment Ongoing"/>
+  </concept>
+  <concept>
+    <code value="treatment-terminated"/>
+    <display value="Treatment Terminated"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/Composition/tbpass-composition-001> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tbpass-composition-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition tbpass-composition-001</b></p><a name=\"tbpass-composition-001\"> </a><a name=\"hctbpass-composition-001\"> </a><a name=\"tbpass-composition-001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-pass-composition.html\">TB Pass IPS Composition</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Tuberculosis Progress Note</span></p><p><b>date</b>: 2025-05-11</p><p><b>author</b>: <a href=\"Practitioner/example\">Practitioner/example</a></p><p><b>title</b>: TB Case Summary for Bernard Wadie</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Tuberculosis Progress Note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-05-11"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Practitioner/example> ;
+     fhir:reference [ fhir:v "Practitioner/example" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "TB Case Summary for Bernard Wadie"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Problems" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Confirmed TB case for Bernard Wadie</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Condition/tbpass-problem-tb> ;
+       fhir:reference [ fhir:v "Condition/tbpass-problem-tb" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medications" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>First-line TB treatment regimen for Bernard Wadie</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/MedicationStatement/tbpass-treatment-regimen> ;
+       fhir:reference [ fhir:v "MedicationStatement/tbpass-treatment-regimen" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Vital Signs" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8716-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8716-3" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Vital signs at start of treatment</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-vitals> ;
+       fhir:reference [ fhir:v "Observation/tbpass-vitals" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Lab Results" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:30954-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "30954-2" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Lab result showing positive smear microscopy</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-treatment-outcome> ;
+       fhir:reference [ fhir:v "Observation/tbpass-treatment-outcome" ]
+     ] [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-labresult-001> ;
+       fhir:reference [ fhir:v "Observation/tbpass-labresult-001" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "No allergies" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>No known allergies</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "unknown"
+         ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

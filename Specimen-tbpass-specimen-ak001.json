@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "tbpass-specimen-ak001",
+  "meta" : {
+    "profile" : ["http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-specimen"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen tbpass-specimen-ak001</b></p><a name=\"tbpass-specimen-ak001\"> </a><a name=\"hctbpass-specimen-ak001\"> </a><a name=\"tbpass-specimen-ak001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-pass-specimen.html\">TB Pass Specimen</a></p></div><p><b>identifier</b>: <code>http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID</code>/AK-TB-001</p><p><b>type</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/SpecimenType sputum}\">Sputum</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID",
+    "value" : "AK-TB-001"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+      "code" : "sputum"
+    }]
+  }
+}

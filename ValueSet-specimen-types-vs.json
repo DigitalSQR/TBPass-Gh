@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "specimen-types-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet specimen-types-vs</b></p><a name=\"specimen-types-vs\"> </a><a name=\"hcspecimen-types-vs\"> </a><a name=\"specimen-types-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-specimen-types.html\"><code>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</code></a></li></ul></div>"
+  },
+  "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs",
+  "version" : "0.1.0",
+  "name" : "SpecimenTypesVS",
+  "title" : "Specimen Types ValueSet",
+  "status" : "draft",
+  "date" : "2025-05-21T15:04:54+00:00",
+  "publisher" : "Digital Square",
+  "contact" : [{
+    "name" : "Digital Square",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "A ValueSet for Specimen Types.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"
+    }]
+  }
+}

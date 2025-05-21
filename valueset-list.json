@@ -1,0 +1,49 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RegimenTypesVS",
+      "title" : "Regimen Types ValueSet",
+      "description" : "A ValueSet for Regimen Types.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/RegimenType"]
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SpecimenTypesVS",
+      "title" : "Specimen Types ValueSet",
+      "description" : "A ValueSet for Specimen Types.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"]
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TestResultsVS",
+      "title" : "Test Results ValueSet",
+      "description" : "A ValueSet for Test Results.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/TestResult"]
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TestTypesVS",
+      "title" : "Test Types ValueSet",
+      "description" : "A ValueSet for Test Types.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/TestType"]
+    },
+    {
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TreatmentOutcomeVS",
+      "title" : "Treatment Outcome ValueSet",
+      "description" : "A ValueSet for Treatment Outcomes.",
+      "systems" : ["http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"]
+    }
+  ]
+}

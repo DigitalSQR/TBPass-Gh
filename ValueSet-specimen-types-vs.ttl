@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "specimen-types-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet specimen-types-vs</b></p><a name=\"specimen-types-vs\"> </a><a name=\"hcspecimen-types-vs\"> </a><a name=\"specimen-types-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-specimen-types.html\"><code>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SpecimenTypesVS"] ; # 
+  fhir:title [ fhir:v "Specimen Types ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-05-21T15:04:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Digital Square"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Digital Square" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A ValueSet for Specimen Types."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="regimen-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem regimen-types</b></p><a name="regimen-types"> </a><a name="hcregimen-types"> </a><a name="regimen-types-en-US"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">first-line<a name="regimen-types-first-line"> </a></td><td>First-line treatment</td></tr><tr><td style="white-space:nowrap">second-line<a name="regimen-types-second-line"> </a></td><td>Second-line treatment</td></tr></table></div>
+  </text>
+  <url value="http://fhir.nhis.gov.gh/CodeSystem/RegimenType"/>
+  <version value="0.1.0"/>
+  <name value="RegimenTypes"/>
+  <title value="Regimen Types CodeSystem"/>
+  <status value="draft"/>
+  <date value="2025-05-21T15:04:54+00:00"/>
+  <publisher value="Digital Square"/>
+  <contact>
+    <name value="Digital Square"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="A CodeSystem for Regimen Types."/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="first-line"/>
+    <display value="First-line treatment"/>
+  </concept>
+  <concept>
+    <code value="second-line"/>
+    <display value="Second-line treatment"/>
+  </concept>
+</CodeSystem>

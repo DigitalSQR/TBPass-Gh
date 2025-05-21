@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "test-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem test-types</b></p><a name=\"test-types\"> </a><a name=\"hctest-types\"> </a><a name=\"test-types-en-US\"> </a><p>This  code system <code>http://fhir.nhis.gov.gh/CodeSystem/TestType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">sputum-smear<a name=\"test-types-sputum-smear\"> </a></td><td>Sputum Smear</td></tr><tr><td style=\"white-space:nowrap\">lpa<a name=\"test-types-lpa\"> </a></td><td>LPA</td></tr><tr><td style=\"white-space:nowrap\">culture<a name=\"test-types-culture\"> </a></td><td>Culture</td></tr></table></div>"
+  },
+  "url" : "http://fhir.nhis.gov.gh/CodeSystem/TestType",
+  "version" : "0.1.0",
+  "name" : "TestTypes",
+  "title" : "Test Types CodeSystem",
+  "status" : "draft",
+  "date" : "2025-05-21T15:04:54+00:00",
+  "publisher" : "Digital Square",
+  "contact" : [{
+    "name" : "Digital Square",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "A CodeSystem for Test Types.",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "sputum-smear",
+    "display" : "Sputum Smear"
+  },
+  {
+    "code" : "lpa",
+    "display" : "LPA"
+  },
+  {
+    "code" : "culture",
+    "display" : "Culture"
+  }]
+}

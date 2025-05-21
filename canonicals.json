@@ -1,0 +1,149 @@
+[
+  {
+    "id" : "ds.fhir.gh.tb-pass",
+    "type" : "ImplementationGuide",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/ImplementationGuide/ds.fhir.gh.tb-pass",
+    "version" : "0.1.0",
+    "name" : "tbpass"
+  },
+  {
+    "id" : "ghana-tb-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-observation",
+    "version" : "0.1.0",
+    "name" : "TBPassObservation"
+  },
+  {
+    "id" : "ghana-tb-vital-signs",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-vital-signs",
+    "version" : "0.1.0",
+    "name" : "TBPassVitalSigns"
+  },
+  {
+    "id" : "lab-results-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/lab-results-observation",
+    "version" : "0.1.0",
+    "name" : "TBPassLabResults"
+  },
+  {
+    "id" : "regimen-medicationstatement",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/regimen-medicationstatement",
+    "version" : "0.1.0",
+    "name" : "TBPassRegimenMedicationStatement"
+  },
+  {
+    "id" : "tb-pass-composition",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition",
+    "version" : "0.1.0",
+    "name" : "TBPassComposition"
+  },
+  {
+    "id" : "tb-pass-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-patient",
+    "version" : "0.1.0",
+    "name" : "TBPassPatient"
+  },
+  {
+    "id" : "tb-pass-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-specimen",
+    "version" : "0.1.0",
+    "name" : "TBPassSpecimen"
+  },
+  {
+    "id" : "tb-patient-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-patient-ips",
+    "version" : "0.1.0",
+    "name" : "TBPatientIPS"
+  },
+  {
+    "id" : "tb-problem",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-problem",
+    "version" : "0.1.0",
+    "name" : "TBPassTBProblem"
+  },
+  {
+    "id" : "treatment-outcome-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/treatment-outcome-observation",
+    "version" : "0.1.0",
+    "name" : "TBPassTreatmentOutcome"
+  },
+  {
+    "id" : "regimen-types-vs",
+    "type" : "ValueSet",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs",
+    "version" : "0.1.0",
+    "name" : "RegimenTypesVS"
+  },
+  {
+    "id" : "specimen-types-vs",
+    "type" : "ValueSet",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs",
+    "version" : "0.1.0",
+    "name" : "SpecimenTypesVS"
+  },
+  {
+    "id" : "test-results-vs",
+    "type" : "ValueSet",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs",
+    "version" : "0.1.0",
+    "name" : "TestResultsVS"
+  },
+  {
+    "id" : "test-types-vs",
+    "type" : "ValueSet",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs",
+    "version" : "0.1.0",
+    "name" : "TestTypesVS"
+  },
+  {
+    "id" : "treatment-outcome-vs",
+    "type" : "ValueSet",
+    "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs",
+    "version" : "0.1.0",
+    "name" : "TreatmentOutcomeVS"
+  },
+  {
+    "id" : "regimen-types",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.nhis.gov.gh/CodeSystem/RegimenType",
+    "version" : "0.1.0",
+    "name" : "RegimenTypes"
+  },
+  {
+    "id" : "specimen-types",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+    "version" : "0.1.0",
+    "name" : "SpecimenTypes"
+  },
+  {
+    "id" : "test-results",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+    "version" : "0.1.0",
+    "name" : "TestResults"
+  },
+  {
+    "id" : "test-types",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.nhis.gov.gh/CodeSystem/TestType",
+    "version" : "0.1.0",
+    "name" : "TestTypes"
+  },
+  {
+    "id" : "treatment-outcome",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+    "version" : "0.1.0",
+    "name" : "TreatmentOutcome"
+  }
+]

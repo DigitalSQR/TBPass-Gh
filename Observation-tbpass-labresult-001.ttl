@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-labresult-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tbpass-labresult-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/lab-results-observation"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/lab-results-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation tbpass-labresult-001</b></p><a name=\"tbpass-labresult-001\"> </a><a name=\"hctbpass-labresult-001\"> </a><a name=\"tbpass-labresult-001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lab-results-observation.html\">TB Pass Treatment Outcome</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/TestType sputum-smear}\">Sputum Smear</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-11</p><p><b>value</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/TestResult positive-1}\">Positive (+)</span></p><p><b>note</b>: Smear microscopy result returned positive (+)</p><p><b>specimen</b>: <a href=\"Specimen-tbpass-specimen-ak001.html\">Specimen: identifier = http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID#AK-TB-001; type = Sputum</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/TestType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "sputum-smear" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-05-11"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/TestResult"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "positive-1" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Smear microscopy result returned positive (+)" ]
+  ] ) ; # 
+  fhir:specimen [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Specimen/tbpass-specimen-ak001> ;
+     fhir:reference [ fhir:v "Specimen/tbpass-specimen-ak001" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

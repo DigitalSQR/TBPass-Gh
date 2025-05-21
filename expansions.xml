@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="e8d729f5-30f0-4a07-b02c-6c6d6f0d5f6e"/>
+  <meta>
+    <lastUpdated value="2025-05-21T15:05:44.750+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-regimen-types.html">codesystem Regimen Types CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/RegimenType-first-line"> </a>  
+                  <a href="CodeSystem-regimen-types.html#regimen-types-first-line">first-line</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</td>
+                <td>First-line treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/RegimenType-second-line"> </a>  
+                  <a href="CodeSystem-regimen-types.html#regimen-types-second-line">second-line</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</td>
+                <td>Second-line treatment</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs"/>
+        <version value="0.1.0"/>
+        <name value="RegimenTypesVS"/>
+        <title value="Regimen Types ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-05-21T15:04:54+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5b926607-86d4-4ed5-94f1-7ca63fe746c7"/>
+          <timestamp value="2025-05-21T15:06:18+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.nhis.gov.gh/CodeSystem/RegimenType|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/RegimenType"/>
+            <code value="first-line"/>
+            <display value="First-line treatment"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/RegimenType"/>
+            <code value="second-line"/>
+            <display value="Second-line treatment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-specimen-types.html">codesystem Specimen Types CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/SpecimenType-sputum"> </a>  
+                  <a href="CodeSystem-specimen-types.html#specimen-types-sputum">sputum</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</td>
+                <td>Sputum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/SpecimenType-stool"> </a>  
+                  <a href="CodeSystem-specimen-types.html#specimen-types-stool">stool</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</td>
+                <td>Stool</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/SpecimenType-gastric-lavage"> </a>  
+                  <a href="CodeSystem-specimen-types.html#specimen-types-gastric-lavage">gastric-lavage</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</td>
+                <td>Gastric Lavage</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs"/>
+        <version value="0.1.0"/>
+        <name value="SpecimenTypesVS"/>
+        <title value="Specimen Types ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-05-21T15:04:54+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:e675b9cd-efad-4cd9-9330-83d547aa3b87"/>
+          <timestamp value="2025-05-21T15:06:18+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.nhis.gov.gh/CodeSystem/SpecimenType|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"/>
+            <code value="sputum"/>
+            <display value="Sputum"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"/>
+            <code value="stool"/>
+            <display value="Stool"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"/>
+            <code value="gastric-lavage"/>
+            <display value="Gastric Lavage"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-test-results.html">codesystem Test Results CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-negative"> </a>  
+                  <a href="CodeSystem-test-results.html#test-results-negative">negative</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td>
+                <td>Negative</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-scanty"> </a>  
+                  <a href="CodeSystem-test-results.html#test-results-positive-scanty">positive-scanty</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td>
+                <td>Positive (scanty)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-1"> </a>  
+                  <a href="CodeSystem-test-results.html#test-results-positive-1">positive-1</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td>
+                <td>Positive (+)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-2"> </a>  
+                  <a href="CodeSystem-test-results.html#test-results-positive-2">positive-2</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td>
+                <td>Positive (++)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-3"> </a>  
+                  <a href="CodeSystem-test-results.html#test-results-positive-3">positive-3</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td>
+                <td>Positive (+++)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs"/>
+        <version value="0.1.0"/>
+        <name value="TestResultsVS"/>
+        <title value="Test Results ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-05-21T15:04:54+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:9a1c88fe-2528-4efb-a489-00858347d201"/>
+          <timestamp value="2025-05-21T15:06:18+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.nhis.gov.gh/CodeSystem/TestResult|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestResult"/>
+            <code value="negative"/>
+            <display value="Negative"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestResult"/>
+            <code value="positive-scanty"/>
+            <display value="Positive (scanty)"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestResult"/>
+            <code value="positive-1"/>
+            <display value="Positive (+)"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestResult"/>
+            <code value="positive-2"/>
+            <display value="Positive (++)"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestResult"/>
+            <code value="positive-3"/>
+            <display value="Positive (+++)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-test-types.html">codesystem Test Types CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestType-sputum-smear"> </a>  
+                  <a href="CodeSystem-test-types.html#test-types-sputum-smear">sputum-smear</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestType</td>
+                <td>Sputum Smear</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestType-lpa"> </a>  
+                  <a href="CodeSystem-test-types.html#test-types-lpa">lpa</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestType</td>
+                <td>LPA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TestType-culture"> </a>  
+                  <a href="CodeSystem-test-types.html#test-types-culture">culture</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TestType</td>
+                <td>Culture</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs"/>
+        <version value="0.1.0"/>
+        <name value="TestTypesVS"/>
+        <title value="Test Types ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-05-21T15:04:54+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:b4e9602d-c42e-464d-a177-be8dc4e81750"/>
+          <timestamp value="2025-05-21T15:06:18+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.nhis.gov.gh/CodeSystem/TestType|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestType"/>
+            <code value="sputum-smear"/>
+            <display value="Sputum Smear"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestType"/>
+            <code value="lpa"/>
+            <display value="LPA"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestType"/>
+            <code value="culture"/>
+            <display value="Culture"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-treatment-outcome.html">codesystem Treatment Outcome CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 12 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-cured"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-cured">cured</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Cured</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-failure"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-treatment-failure">treatment-failure</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Treatment Failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-completed"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-treatment-completed">treatment-completed</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Treatment Completed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-not-evaluable"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-not-evaluable">not-evaluable</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Not Evaluated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-died"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-died">died</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Died</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-transferred-out"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-transferred-out">transferred-out</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Transferred Out</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-lost-to-follow-up"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-lost-to-follow-up">lost-to-follow-up</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Lost to Follow Up</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-not-done"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-not-done">not-done</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Not Done</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-unknown"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-unknown">unknown</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Unknown</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-delayed"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-treatment-delayed">treatment-delayed</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Treatment Delayed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-ongoing"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-treatment-ongoing">treatment-ongoing</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Treatment Ongoing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-terminated"> </a>  
+                  <a href="CodeSystem-treatment-outcome.html#treatment-outcome-treatment-terminated">treatment-terminated</a>
+                </td>
+                <td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td>
+                <td>Treatment Terminated</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs"/>
+        <version value="0.1.0"/>
+        <name value="TreatmentOutcomeVS"/>
+        <title value="Treatment Outcome ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-05-21T15:04:54+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:a4e5fe05-6a3c-42f5-bb6c-0e483e51d819"/>
+          <timestamp value="2025-05-21T15:06:18+00:00"/>
+          <total value="12"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="cured"/>
+            <display value="Cured"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="treatment-failure"/>
+            <display value="Treatment Failure"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="treatment-completed"/>
+            <display value="Treatment Completed"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="not-evaluable"/>
+            <display value="Not Evaluated"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="died"/>
+            <display value="Died"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="transferred-out"/>
+            <display value="Transferred Out"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="lost-to-follow-up"/>
+            <display value="Lost to Follow Up"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="not-done"/>
+            <display value="Not Done"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="treatment-delayed"/>
+            <display value="Treatment Delayed"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="treatment-ongoing"/>
+            <display value="Treatment Ongoing"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="treatment-terminated"/>
+            <display value="Treatment Terminated"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

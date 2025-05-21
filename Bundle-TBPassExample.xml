@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="TBPassExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
+  </meta>
+  <identifier>
+    <value value="TBPass-001"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2025-05-11T10:00:00Z"/>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassComposition/tbpass-composition-001"/>
+    <resource>
+      <Composition>
+        <id value="tbpass-composition-001"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_tbpass-composition-001"> </a><p class="res-header-id"><b>Generated Narrative: Composition tbpass-composition-001</b></p><a name="tbpass-composition-001"> </a><a name="hctbpass-composition-001"> </a><a name="tbpass-composition-001-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tb-pass-composition.html">TB Pass IPS Composition</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 60591-5}">Tuberculosis Progress Note</span></p><p><b>date</b>: 2025-05-11</p><p><b>author</b>: <a href="Practitioner/example">Practitioner/example</a></p><p><b>title</b>: TB Case Summary for Bernard Wadie</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Tuberculosis Progress Note"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/tbpass-patient-bernard"/>
+        </subject>
+        <date value="2025-05-11"/>
+        <author>
+          <reference value="Practitioner/example"/>
+        </author>
+        <title value="TB Case Summary for Bernard Wadie"/>
+        <section>
+          <title value="Problems"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11450-4"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div>Confirmed TB case for Bernard Wadie</div>
+          </text>
+          <entry>
+            <reference value="Condition/tbpass-problem-tb"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Medications"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="10160-0"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div>First-line TB treatment regimen for Bernard Wadie</div>
+          </text>
+          <entry>
+            <reference value="MedicationStatement/tbpass-treatment-regimen"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Vital Signs"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="8716-3"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div>Vital signs at start of treatment</div>
+          </text>
+          <entry>
+            <reference value="Observation/tbpass-vitals"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Lab Results"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="30954-2"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div>Lab result showing positive smear microscopy</div>
+          </text>
+          <entry>
+            <reference value="Observation/tbpass-treatment-outcome"/>
+          </entry>
+          <entry>
+            <reference value="Observation/tbpass-labresult-001"/>
+          </entry>
+        </section>
+        <section>
+          <title value="No allergies"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="48765-2"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div>No known allergies</div>
+          </text>
+          <entry>
+            <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="unknown"/>
+            </extension>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Patient/tbpass-patient-bernard"/>
+    <resource>
+      <Patient>
+        <id value="tbpass-patient-bernard"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_tbpass-patient-bernard"> </a><p class="res-header-id"><b>Generated Narrative: Patient tbpass-patient-bernard</b></p><a name="tbpass-patient-bernard"> </a><a name="hctbpass-patient-bernard"> </a><a name="tbpass-patient-bernard-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tb-pass-patient.html">TB Pass Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li><code>http://fhir.nhis.gov.gh/Identifier/NationalIDNumber</code>/GHA-123456789-0</li><li><code>http://fhir.nhis.gov.gh/Identifier/NHISNumber</code>/123456789</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">ph: 247775121</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber"/>
+          <value value="250508-0001-AF00010101"/>
+        </identifier>
+        <identifier>
+          <system value="http://fhir.nhis.gov.gh/Identifier/NationalIDNumber"/>
+          <value value="GHA-123456789-0"/>
+        </identifier>
+        <identifier>
+          <system value="http://fhir.nhis.gov.gh/Identifier/NHISNumber"/>
+          <value value="123456789"/>
+        </identifier>
+        <name>
+          <family value="Wadie"/>
+          <given value="Bernard"/>
+          <given value="Kwasi"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="247775121"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="2018"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassTBProblem/tbpass-problem-tb"/>
+    <resource>
+      <Condition>
+        <id value="tbpass-problem-tb"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-problem"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_tbpass-problem-tb"> </a><p class="res-header-id"><b>Generated Narrative: Condition tbpass-problem-tb</b></p><a name="tbpass-problem-tb"> </a><a name="hctbpass-problem-tb"> </a><a name="tbpass-problem-tb-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tb-problem.html">TB Pass Problem</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:">active</span></p><p><b>code</b>: <span title="Codes:">Tuberculosis</span></p><p><b>bodySite</b>: <span title="Codes:">Lungs</span></p><p><b>subject</b>: <a href="Patient-tbpass-patient-bernard.html">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>recordedDate</b>: 2025-05-05</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <text value="Tuberculosis"/>
+        </code>
+        <bodySite>
+          <text value="Lungs"/>
+        </bodySite>
+        <subject>
+          <reference value="Patient/tbpass-patient-bernard"/>
+        </subject>
+        <recordedDate value="2025-05-05"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassRegimenMedicationStatement/tbpass-treatment-regimen"/>
+    <resource>
+      <MedicationStatement>
+        <id value="tbpass-treatment-regimen"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/regimen-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_tbpass-treatment-regimen"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement tbpass-treatment-regimen</b></p><a name="tbpass-treatment-regimen"> </a><a name="hctbpass-treatment-regimen"> </a><a name="tbpass-treatment-regimen-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-regimen-medicationstatement.html">TB Pass TBMedicationStatement</a></p></div><p><b>status</b>: ended</p><p><b>category</b>: <span title="Codes:{http://fhir.nhis.gov.gh/CodeSystem/RegimenType first-line}">First-line treatment</span></p><p><b>medication</b>: <span title="Codes:">RHZ 75/50/150 - E 100mg-Child-4 - 7 Kg</span></p><p><b>subject</b>: <a href="Patient-tbpass-patient-bernard.html">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-08 --&gt; 2025-05-10</p><p><b>note</b>: Patient has been adherent to treatment regimen. Side effects include mild nausea and insomnia, which are being managed. Next scheduled follow-up at Korle-Bu TB Clinic on April 15, 2025.</p></div>
+        </text>
+        <status value="ended"/>
+        <category>
+          <coding>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/RegimenType"/>
+            <code value="first-line"/>
+            <display value="First-line treatment"/>
+          </coding>
+        </category>
+        <medicationCodeableConcept>
+          <text value="RHZ 75/50/150 - E 100mg-Child-4 - 7 Kg"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/tbpass-patient-bernard"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2025-05-08"/>
+          <end value="2025-05-10"/>
+        </effectivePeriod>
+        <note>
+          <text value="Patient has been adherent to treatment regimen. Side effects include mild nausea and insomnia, which are being managed. Next scheduled follow-up at Korle-Bu TB Clinic on April 15, 2025."/>
+        </note>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassVitalSigns/tbpass-vitals"/>
+    <resource>
+      <Observation>
+        <id value="tbpass-vitals"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-vital-signs"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_tbpass-vitals"> </a><p class="res-header-id"><b>Generated Narrative: Observation tbpass-vitals</b></p><a name="tbpass-vitals"> </a><a name="hctbpass-vitals"> </a><a name="tbpass-vitals-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ghana-tb-vital-signs.html">TB Pass IPS Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:">Height and Weight</span></p><p><b>subject</b>: <a href="Patient-tbpass-patient-bernard.html">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-08</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Height</span></p><p><b>value</b>: 160 cm</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Weight</span></p><p><b>value</b>: 80 kg</p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <text value="Height and Weight"/>
+        </code>
+        <subject>
+          <reference value="Patient/tbpass-patient-bernard"/>
+        </subject>
+        <effectiveDateTime value="2025-05-08"/>
+        <component>
+          <code>
+            <text value="Height"/>
+          </code>
+          <valueQuantity>
+            <value value="160"/>
+            <unit value="cm"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <text value="Weight"/>
+          </code>
+          <valueQuantity>
+            <value value="80"/>
+            <unit value="kg"/>
+          </valueQuantity>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassTreatmentOutcome/tbpass-treatment-outcome"/>
+    <resource>
+      <Observation>
+        <id value="tbpass-treatment-outcome"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/treatment-outcome-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_tbpass-treatment-outcome"> </a><p class="res-header-id"><b>Generated Narrative: Observation tbpass-treatment-outcome</b></p><a name="tbpass-treatment-outcome"> </a><a name="hctbpass-treatment-outcome"> </a><a name="tbpass-treatment-outcome-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-treatment-outcome-observation.html">TB Pass Treatment Outcome</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome cured}">Cured</span></p><p><b>subject</b>: <a href="Patient-tbpass-patient-bernard.html">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: ?? --&gt; 2025-05-08</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"/>
+            <code value="cured"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/tbpass-patient-bernard"/>
+        </subject>
+        <effectivePeriod>
+          <end value="2025-05-08"/>
+        </effectivePeriod>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassSpecimen/tbpass-specimen-ak001"/>
+    <resource>
+      <Specimen>
+        <id value="tbpass-specimen-ak001"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-specimen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Specimen_tbpass-specimen-ak001"> </a><p class="res-header-id"><b>Generated Narrative: Specimen tbpass-specimen-ak001</b></p><a name="tbpass-specimen-ak001"> </a><a name="hctbpass-specimen-ak001"> </a><a name="tbpass-specimen-ak001-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tb-pass-specimen.html">TB Pass Specimen</a></p></div><p><b>identifier</b>: <code>http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID</code>/AK-TB-001</p><p><b>type</b>: <span title="Codes:{http://fhir.nhis.gov.gh/CodeSystem/SpecimenType sputum}">Sputum</span></p></div>
+        </text>
+        <identifier>
+          <system value="http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID"/>
+          <value value="AK-TB-001"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"/>
+            <code value="sputum"/>
+          </coding>
+        </type>
+      </Specimen>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/TBPassLabResults/tbpass-labresult-001"/>
+    <resource>
+      <Observation>
+        <id value="tbpass-labresult-001"/>
+        <meta>
+          <profile value="http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/lab-results-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_tbpass-labresult-001"> </a><p class="res-header-id"><b>Generated Narrative: Observation tbpass-labresult-001</b></p><a name="tbpass-labresult-001"> </a><a name="hctbpass-labresult-001"> </a><a name="tbpass-labresult-001-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lab-results-observation.html">TB Pass Treatment Outcome</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://fhir.nhis.gov.gh/CodeSystem/TestType sputum-smear}">Sputum Smear</span></p><p><b>subject</b>: <a href="Patient-tbpass-patient-bernard.html">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-11</p><p><b>value</b>: <span title="Codes:{http://fhir.nhis.gov.gh/CodeSystem/TestResult positive-1}">Positive (+)</span></p><p><b>note</b>: Smear microscopy result returned positive (+)</p><p><b>specimen</b>: <a href="Specimen-tbpass-specimen-ak001.html">Specimen: identifier = http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID#AK-TB-001; type = Sputum</a></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestType"/>
+            <code value="sputum-smear"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/tbpass-patient-bernard"/>
+        </subject>
+        <effectiveDateTime value="2025-05-11"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.nhis.gov.gh/CodeSystem/TestResult"/>
+            <code value="positive-1"/>
+          </coding>
+        </valueCodeableConcept>
+        <note>
+          <text value="Smear microscopy result returned positive (+)"/>
+        </note>
+        <specimen>
+          <reference value="Specimen/tbpass-specimen-ak001"/>
+        </specimen>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

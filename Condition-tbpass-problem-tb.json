@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Condition",
+  "id" : "tbpass-problem-tb",
+  "meta" : {
+    "profile" : ["http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-problem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition tbpass-problem-tb</b></p><a name=\"tbpass-problem-tb\"> </a><a name=\"hctbpass-problem-tb\"> </a><a name=\"tbpass-problem-tb-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-problem.html\">TB Pass Problem</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:\">active</span></p><p><b>code</b>: <span title=\"Codes:\">Tuberculosis</span></p><p><b>bodySite</b>: <span title=\"Codes:\">Lungs</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>recordedDate</b>: 2025-05-05</p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "code" : "active"
+    }]
+  },
+  "code" : {
+    "text" : "Tuberculosis"
+  },
+  "bodySite" : [{
+    "text" : "Lungs"
+  }],
+  "subject" : {
+    "reference" : "Patient/tbpass-patient-bernard"
+  },
+  "recordedDate" : "2025-05-05"
+}

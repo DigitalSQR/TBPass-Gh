@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://fhir.nhis.gov.gh/CodeSystem/RegimenType,0.1.0,draft,,RegimenTypes,Regimen Types CodeSystem,"A CodeSystem for Regimen Types.",
+http://fhir.nhis.gov.gh/CodeSystem/SpecimenType,0.1.0,draft,,SpecimenTypes,Specimen Types CodeSystem,"A CodeSystem for Specimen Types.",
+http://fhir.nhis.gov.gh/CodeSystem/TestResult,0.1.0,draft,,TestResults,Test Results CodeSystem,"A CodeSystem for Test Results.",
+http://fhir.nhis.gov.gh/CodeSystem/TestType,0.1.0,draft,,TestTypes,Test Types CodeSystem,"A CodeSystem for Test Types.",
+http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome,0.1.0,draft,,TreatmentOutcome,Treatment Outcome CodeSystem,"A CodeSystem for Treatment Outcomes.",

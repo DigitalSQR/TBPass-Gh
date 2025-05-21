@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="regimen-types-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet regimen-types-vs</b></p><a name="regimen-types-vs"> </a><a name="hcregimen-types-vs"> </a><a name="regimen-types-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-regimen-types.html"><code>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</code></a></li></ul></div>
+  </text>
+  <url value="http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs"/>
+  <version value="0.1.0"/>
+  <name value="RegimenTypesVS"/>
+  <title value="Regimen Types ValueSet"/>
+  <status value="draft"/>
+  <date value="2025-05-21T15:04:54+00:00"/>
+  <publisher value="Digital Square"/>
+  <contact>
+    <name value="Digital Square"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="A ValueSet for Regimen Types."/>
+  <compose>
+    <include>
+      <system value="http://fhir.nhis.gov.gh/CodeSystem/RegimenType"/>
+    </include>
+  </compose>
+</ValueSet>

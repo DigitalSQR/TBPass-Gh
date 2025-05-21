@@ -1,0 +1,343 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "e8d729f5-30f0-4a07-b02c-6c6d6f0d5f6e",
+  "meta" : {
+    "lastUpdated" : "2025-05-21T15:05:44.750+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-regimen-types.html\">codesystem Regimen Types CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/RegimenType-first-line\"> </a>\u00a0\u00a0<a href=\"CodeSystem-regimen-types.html#regimen-types-first-line\">first-line</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</td><td>First-line treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/RegimenType-second-line\"> </a>\u00a0\u00a0<a href=\"CodeSystem-regimen-types.html#regimen-types-second-line\">second-line</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/RegimenType</td><td>Second-line treatment</td></tr></table></div>"
+      },
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/regimen-types-vs",
+      "version" : "0.1.0",
+      "name" : "RegimenTypesVS",
+      "title" : "Regimen Types ValueSet",
+      "status" : "draft",
+      "date" : "2025-05-21T15:04:54+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5b926607-86d4-4ed5-94f1-7ca63fe746c7",
+        "timestamp" : "2025-05-21T15:06:18+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://fhir.nhis.gov.gh/CodeSystem/RegimenType|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/RegimenType",
+          "code" : "first-line",
+          "display" : "First-line treatment"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/RegimenType",
+          "code" : "second-line",
+          "display" : "Second-line treatment"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-specimen-types.html\">codesystem Specimen Types CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/SpecimenType-sputum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-specimen-types.html#specimen-types-sputum\">sputum</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</td><td>Sputum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/SpecimenType-stool\"> </a>\u00a0\u00a0<a href=\"CodeSystem-specimen-types.html#specimen-types-stool\">stool</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</td><td>Stool</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/SpecimenType-gastric-lavage\"> </a>\u00a0\u00a0<a href=\"CodeSystem-specimen-types.html#specimen-types-gastric-lavage\">gastric-lavage</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/SpecimenType</td><td>Gastric Lavage</td></tr></table></div>"
+      },
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/specimen-types-vs",
+      "version" : "0.1.0",
+      "name" : "SpecimenTypesVS",
+      "title" : "Specimen Types ValueSet",
+      "status" : "draft",
+      "date" : "2025-05-21T15:04:54+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e675b9cd-efad-4cd9-9330-83d547aa3b87",
+        "timestamp" : "2025-05-21T15:06:18+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+          "code" : "sputum",
+          "display" : "Sputum"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+          "code" : "stool",
+          "display" : "Stool"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType",
+          "code" : "gastric-lavage",
+          "display" : "Gastric Lavage"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-test-results.html\">codesystem Test Results CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-negative\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-results.html#test-results-negative\">negative</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-scanty\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-results.html#test-results-positive-scanty\">positive-scanty</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td><td>Positive (scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-results.html#test-results-positive-1\">positive-1</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-results.html#test-results-positive-2\">positive-2</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestResult-positive-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-results.html#test-results-positive-3\">positive-3</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestResult</td><td>Positive (+++)</td></tr></table></div>"
+      },
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-results-vs",
+      "version" : "0.1.0",
+      "name" : "TestResultsVS",
+      "title" : "Test Results ValueSet",
+      "status" : "draft",
+      "date" : "2025-05-21T15:04:54+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:9a1c88fe-2528-4efb-a489-00858347d201",
+        "timestamp" : "2025-05-21T15:06:18+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+          "code" : "negative",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+          "code" : "positive-scanty",
+          "display" : "Positive (scanty)"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+          "code" : "positive-1",
+          "display" : "Positive (+)"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+          "code" : "positive-2",
+          "display" : "Positive (++)"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestResult",
+          "code" : "positive-3",
+          "display" : "Positive (+++)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-test-types.html\">codesystem Test Types CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestType-sputum-smear\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-types.html#test-types-sputum-smear\">sputum-smear</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestType</td><td>Sputum Smear</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestType-lpa\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-types.html#test-types-lpa\">lpa</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestType</td><td>LPA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TestType-culture\"> </a>\u00a0\u00a0<a href=\"CodeSystem-test-types.html#test-types-culture\">culture</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TestType</td><td>Culture</td></tr></table></div>"
+      },
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/test-types-vs",
+      "version" : "0.1.0",
+      "name" : "TestTypesVS",
+      "title" : "Test Types ValueSet",
+      "status" : "draft",
+      "date" : "2025-05-21T15:04:54+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:b4e9602d-c42e-464d-a177-be8dc4e81750",
+        "timestamp" : "2025-05-21T15:06:18+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://fhir.nhis.gov.gh/CodeSystem/TestType|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestType",
+          "code" : "sputum-smear",
+          "display" : "Sputum Smear"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestType",
+          "code" : "lpa",
+          "display" : "LPA"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TestType",
+          "code" : "culture",
+          "display" : "Culture"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-treatment-outcome.html\">codesystem Treatment Outcome CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-cured\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-cured\">cured</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-failure\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-treatment-failure\">treatment-failure</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Treatment Failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-completed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-treatment-completed\">treatment-completed</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Treatment Completed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-not-evaluable\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-not-evaluable\">not-evaluable</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Not Evaluated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-died\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-died\">died</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-transferred-out\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-transferred-out\">transferred-out</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Transferred Out</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-lost-to-follow-up\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-lost-to-follow-up\">lost-to-follow-up</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Lost to Follow Up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-not-done\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-not-done\">not-done</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Not Done</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-unknown\">unknown</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-delayed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-treatment-delayed\">treatment-delayed</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Treatment Delayed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-ongoing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-treatment-ongoing\">treatment-ongoing</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Treatment Ongoing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome-treatment-terminated\"> </a>\u00a0\u00a0<a href=\"CodeSystem-treatment-outcome.html#treatment-outcome-treatment-terminated\">treatment-terminated</a></td><td>http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome</td><td>Treatment Terminated</td></tr></table></div>"
+      },
+      "url" : "http://DigitalSQR.github.io/TBPass-Gh/ValueSet/treatment-outcome-vs",
+      "version" : "0.1.0",
+      "name" : "TreatmentOutcomeVS",
+      "title" : "Treatment Outcome ValueSet",
+      "status" : "draft",
+      "date" : "2025-05-21T15:04:54+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a4e5fe05-6a3c-42f5-bb6c-0e483e51d819",
+        "timestamp" : "2025-05-21T15:06:18+00:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "cured",
+          "display" : "Cured"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "treatment-failure",
+          "display" : "Treatment Failure"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "treatment-completed",
+          "display" : "Treatment Completed"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "not-evaluable",
+          "display" : "Not Evaluated"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "died",
+          "display" : "Died"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "transferred-out",
+          "display" : "Transferred Out"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "lost-to-follow-up",
+          "display" : "Lost to Follow Up"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "not-done",
+          "display" : "Not Done"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "treatment-delayed",
+          "display" : "Treatment Delayed"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "treatment-ongoing",
+          "display" : "Treatment Ongoing"
+        },
+        {
+          "system" : "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome",
+          "code" : "treatment-terminated",
+          "display" : "Treatment Terminated"
+        }]
+      }
+    }
+  }]
+}

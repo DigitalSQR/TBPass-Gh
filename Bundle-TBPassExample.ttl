@@ -1,0 +1,419 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/Bundle/TBPassExample> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TBPassExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "TBPass-001" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2025-05-11T10:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassComposition/tbpass-composition-001"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassComposition/tbpass-composition-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/tbpass-patient-bernard"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/Patient/tbpass-patient-bernard> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassTBProblem/tbpass-problem-tb"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassTBProblem/tbpass-problem-tb> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassRegimenMedicationStatement/tbpass-treatment-regimen"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassRegimenMedicationStatement/tbpass-treatment-regimen> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassVitalSigns/tbpass-vitals"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassVitalSigns/tbpass-vitals> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassTreatmentOutcome/tbpass-treatment-outcome"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassTreatmentOutcome/tbpass-treatment-outcome> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassSpecimen/tbpass-specimen-ak001"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassSpecimen/tbpass-specimen-ak001> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/fhir/TBPassLabResults/tbpass-labresult-001"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/fhir/TBPassLabResults/tbpass-labresult-001> )
+  ] ) . # 
+
+<http://example.org/fhir/TBPassComposition/tbpass-composition-001> a fhir:Composition ;
+  fhir:id [ fhir:v "tbpass-composition-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-composition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_tbpass-composition-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition tbpass-composition-001</b></p><a name=\"tbpass-composition-001\"> </a><a name=\"hctbpass-composition-001\"> </a><a name=\"tbpass-composition-001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-pass-composition.html\">TB Pass IPS Composition</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Tuberculosis Progress Note</span></p><p><b>date</b>: 2025-05-11</p><p><b>author</b>: <a href=\"Practitioner/example\">Practitioner/example</a></p><p><b>title</b>: TB Case Summary for Bernard Wadie</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Tuberculosis Progress Note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-05-11"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Practitioner/example> ;
+     fhir:reference [ fhir:v "Practitioner/example" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "TB Case Summary for Bernard Wadie"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Problems" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Confirmed TB case for Bernard Wadie</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Condition/tbpass-problem-tb> ;
+       fhir:reference [ fhir:v "Condition/tbpass-problem-tb" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medications" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>First-line TB treatment regimen for Bernard Wadie</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/MedicationStatement/tbpass-treatment-regimen> ;
+       fhir:reference [ fhir:v "MedicationStatement/tbpass-treatment-regimen" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Vital Signs" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8716-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8716-3" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Vital signs at start of treatment</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-vitals> ;
+       fhir:reference [ fhir:v "Observation/tbpass-vitals" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Lab Results" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:30954-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "30954-2" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>Lab result showing positive smear microscopy</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-treatment-outcome> ;
+       fhir:reference [ fhir:v "Observation/tbpass-treatment-outcome" ]
+     ] [
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Observation/tbpass-labresult-001> ;
+       fhir:reference [ fhir:v "Observation/tbpass-labresult-001" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "No allergies" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div>No known allergies</div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "unknown"
+         ]
+       ] )
+     ] )
+  ] ) . # 
+
+<http://example.org/fhir/Patient/tbpass-patient-bernard> a fhir:Patient ;
+  fhir:id [ fhir:v "tbpass-patient-bernard"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-patient"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_tbpass-patient-bernard\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient tbpass-patient-bernard</b></p><a name=\"tbpass-patient-bernard\"> </a><a name=\"hctbpass-patient-bernard\"> </a><a name=\"tbpass-patient-bernard-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-pass-patient.html\">TB Pass Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><code>http://fhir.nhis.gov.gh/Identifier/NationalIDNumber</code>/GHA-123456789-0</li><li><code>http://fhir.nhis.gov.gh/Identifier/NHISNumber</code>/123456789</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">ph: 247775121</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "250508-0001-AF00010101" ]
+  ] [
+     fhir:system [ fhir:v "http://fhir.nhis.gov.gh/Identifier/NationalIDNumber"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "GHA-123456789-0" ]
+  ] [
+     fhir:system [ fhir:v "http://fhir.nhis.gov.gh/Identifier/NHISNumber"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Wadie" ] ;
+     fhir:given ( [ fhir:v "Bernard" ] [ fhir:v "Kwasi" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "247775121" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "2018"^^xsd:gYear] . # 
+
+<http://example.org/fhir/TBPassTBProblem/tbpass-problem-tb> a fhir:Condition ;
+  fhir:id [ fhir:v "tbpass-problem-tb"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-problem"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-problem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_tbpass-problem-tb\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition tbpass-problem-tb</b></p><a name=\"tbpass-problem-tb\"> </a><a name=\"hctbpass-problem-tb\"> </a><a name=\"tbpass-problem-tb-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-problem.html\">TB Pass Problem</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:\">active</span></p><p><b>code</b>: <span title=\"Codes:\">Tuberculosis</span></p><p><b>bodySite</b>: <span title=\"Codes:\">Lungs</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>recordedDate</b>: 2025-05-05</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Tuberculosis" ]
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:text [ fhir:v "Lungs" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2025-05-05"^^xsd:date] . # 
+
+<http://example.org/fhir/TBPassRegimenMedicationStatement/tbpass-treatment-regimen> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "tbpass-treatment-regimen"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/regimen-medicationstatement"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/regimen-medicationstatement>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_tbpass-treatment-regimen\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement tbpass-treatment-regimen</b></p><a name=\"tbpass-treatment-regimen\"> </a><a name=\"hctbpass-treatment-regimen\"> </a><a name=\"tbpass-treatment-regimen-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-regimen-medicationstatement.html\">TB Pass TBMedicationStatement</a></p></div><p><b>status</b>: ended</p><p><b>category</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/RegimenType first-line}\">First-line treatment</span></p><p><b>medication</b>: <span title=\"Codes:\">RHZ 75/50/150 - E 100mg-Child-4 - 7 Kg</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-08 --&gt; 2025-05-10</p><p><b>note</b>: Patient has been adherent to treatment regimen. Side effects include mild nausea and insomnia, which are being managed. Next scheduled follow-up at Korle-Bu TB Clinic on April 15, 2025.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "ended"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/RegimenType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "first-line" ] ;
+       fhir:display [ fhir:v "First-line treatment" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "RHZ 75/50/150 - E 100mg-Child-4 - 7 Kg" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-05-08"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-05-10"^^xsd:date ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Patient has been adherent to treatment regimen. Side effects include mild nausea and insomnia, which are being managed. Next scheduled follow-up at Korle-Bu TB Clinic on April 15, 2025." ]
+  ] ) . # 
+
+<http://example.org/fhir/TBPassVitalSigns/tbpass-vitals> a fhir:Observation ;
+  fhir:id [ fhir:v "tbpass-vitals"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-vital-signs"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/ghana-tb-vital-signs>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_tbpass-vitals\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation tbpass-vitals</b></p><a name=\"tbpass-vitals\"> </a><a name=\"hctbpass-vitals\"> </a><a name=\"tbpass-vitals-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ghana-tb-vital-signs.html\">TB Pass IPS Vital Signs</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:\">Height and Weight</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-08</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Height</span></p><p><b>value</b>: 160 cm</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Weight</span></p><p><b>value</b>: 80 kg</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Height and Weight" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-05-08"^^xsd:date
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:text [ fhir:v "Height" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "160"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "cm" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Weight" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "80"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "kg" ]
+     ]
+  ] ) . # 
+
+<http://example.org/fhir/TBPassTreatmentOutcome/tbpass-treatment-outcome> a fhir:Observation ;
+  fhir:id [ fhir:v "tbpass-treatment-outcome"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/treatment-outcome-observation"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/treatment-outcome-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_tbpass-treatment-outcome\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation tbpass-treatment-outcome</b></p><a name=\"tbpass-treatment-outcome\"> </a><a name=\"hctbpass-treatment-outcome\"> </a><a name=\"tbpass-treatment-outcome-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-treatment-outcome-observation.html\">TB Pass Treatment Outcome</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome cured}\">Cured</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: ?? --&gt; 2025-05-08</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/TreatmentOutcome"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cured" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:end [ fhir:v "2025-05-08"^^xsd:date ]
+  ] . # 
+
+<http://example.org/fhir/TBPassSpecimen/tbpass-specimen-ak001> a fhir:Specimen ;
+  fhir:id [ fhir:v "tbpass-specimen-ak001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-specimen"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/tb-pass-specimen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_tbpass-specimen-ak001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen tbpass-specimen-ak001</b></p><a name=\"tbpass-specimen-ak001\"> </a><a name=\"hctbpass-specimen-ak001\"> </a><a name=\"tbpass-specimen-ak001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tb-pass-specimen.html\">TB Pass Specimen</a></p></div><p><b>identifier</b>: <code>http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID</code>/AK-TB-001</p><p><b>type</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/SpecimenType sputum}\">Sputum</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "AK-TB-001" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/SpecimenType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "sputum" ]
+     ] )
+  ] . # 
+
+<http://example.org/fhir/TBPassLabResults/tbpass-labresult-001> a fhir:Observation ;
+  fhir:id [ fhir:v "tbpass-labresult-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/lab-results-observation"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/lab-results-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_tbpass-labresult-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation tbpass-labresult-001</b></p><a name=\"tbpass-labresult-001\"> </a><a name=\"hctbpass-labresult-001\"> </a><a name=\"tbpass-labresult-001-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lab-results-observation.html\">TB Pass Treatment Outcome</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/TestType sputum-smear}\">Sputum Smear</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-11</p><p><b>value</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/TestResult positive-1}\">Positive (+)</span></p><p><b>note</b>: Smear microscopy result returned positive (+)</p><p><b>specimen</b>: <a href=\"Specimen-tbpass-specimen-ak001.html\">Specimen: identifier = http://fhir.nhis.gov.gh/Identifier/TBPassSpecimenID#AK-TB-001; type = Sputum</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/TestType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "sputum-smear" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-05-11"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/TestResult"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "positive-1" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Smear microscopy result returned positive (+)" ]
+  ] ) ; # 
+  fhir:specimen [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Specimen/tbpass-specimen-ak001> ;
+     fhir:reference [ fhir:v "Specimen/tbpass-specimen-ak001" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

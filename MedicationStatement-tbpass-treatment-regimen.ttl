@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://DigitalSQR.github.io/TBPass-Gh/MedicationStatement/tbpass-treatment-regimen> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tbpass-treatment-regimen"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/regimen-medicationstatement"^^xsd:anyURI ;
+       fhir:link <http://DigitalSQR.github.io/TBPass-Gh/StructureDefinition/regimen-medicationstatement>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement tbpass-treatment-regimen</b></p><a name=\"tbpass-treatment-regimen\"> </a><a name=\"hctbpass-treatment-regimen\"> </a><a name=\"tbpass-treatment-regimen-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-regimen-medicationstatement.html\">TB Pass TBMedicationStatement</a></p></div><p><b>status</b>: ended</p><p><b>category</b>: <span title=\"Codes:{http://fhir.nhis.gov.gh/CodeSystem/RegimenType first-line}\">First-line treatment</span></p><p><b>medication</b>: <span title=\"Codes:\">RHZ 75/50/150 - E 100mg-Child-4 - 7 Kg</span></p><p><b>subject</b>: <a href=\"Patient-tbpass-patient-bernard.html\">Bernard Kwasi Wadie  Male, DoB: 2018 ( http://fhir.nhis.gov.gh/Identifier/ClientRegistrationNumber#250508-0001-AF00010101)</a></p><p><b>effective</b>: 2025-05-08 --&gt; 2025-05-10</p><p><b>note</b>: Patient has been adherent to treatment regimen. Side effects include mild nausea and insomnia, which are being managed. Next scheduled follow-up at Korle-Bu TB Clinic on April 15, 2025.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "ended"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.nhis.gov.gh/CodeSystem/RegimenType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "first-line" ] ;
+       fhir:display [ fhir:v "First-line treatment" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "RHZ 75/50/150 - E 100mg-Child-4 - 7 Kg" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://DigitalSQR.github.io/TBPass-Gh/Patient/tbpass-patient-bernard> ;
+     fhir:reference [ fhir:v "Patient/tbpass-patient-bernard" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-05-08"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-05-10"^^xsd:date ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Patient has been adherent to treatment regimen. Side effects include mild nausea and insomnia, which are being managed. Next scheduled follow-up at Korle-Bu TB Clinic on April 15, 2025." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
